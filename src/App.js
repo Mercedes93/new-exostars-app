@@ -15,10 +15,11 @@ function App() {
 
   return (
     <div className="App">
-      {screen === 'home' && <HomeScreen navigateTo={navigateTo} />}
-      {screen === 'select' && <SelectExoplanet />}
-      {screen === 'chart' && <StarChartViewer />}
-      {screen === 'settings' && <Settings />}
+       <div className="button-container">
+        <button className="stylish-button">Explore Exoplanets</button>
+        <button className="stylish-button">View Star Charts</button>
+        <button className="stylish-button">Settings</button>
+	  </div>
     </div>
   );
 }

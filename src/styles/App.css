@@ -1,11 +1,11 @@
 /* App.css */
 
 :root {
-  --primary-color: #081448;
-  --secondary-color: #282157;
-  --accent-color: #1a2c80;
+  --primary-color: #0D0D26;
+  --secondary-color: #BF93B0;
+  --accent-color: #27DEF2;
   --light-accent: #4a478a;
-  --highlight-color: #da8a8b;
+  --highlight-color: #263173;
 }
 
 body {
@@ -22,16 +22,31 @@ header {
   font-size: 24px;
 }
 
-button {
-  background-color: var(--highlight-color);
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
+/* Button Container for layout */
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
 }
 
-button:hover {
-  background-color: var(--accent-color);
+/* Stylish button design */
+.stylish-button {
+  background-color: #263173; /* Primary color */
+  border: none;
+  border-radius: 50px; /* Rounded corners */
+  padding: 15px 30px; /* Size of the button */
+  font-size: 18px;
+  color: white; /* Button text color */
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.stylish-button:hover {
+  background-color: #27DEF2; /* Hover color */
+  box-shadow: 0px 15px 20px rgba(218, 138, 139, 0.4); /* Bigger shadow */
+  transform: translateY(-5px); /* Lift button on hover */
 }
 
