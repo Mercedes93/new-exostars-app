@@ -1,17 +1,27 @@
-import React from 'react';
-import './App.css';
+// src/App.js
+import React, { useState } from 'react';
+import './styles/App.css';
+import HomeScreen from './HomeScreen';
+import SelectExoplanet from './SelectExoplanet';
+import StarChartViewer from './StarChartViewer';
+import Settings from './Settings';
 
 function App() {
+  const [screen, setScreen] = useState('home');
+
+  const navigateTo = (screenName) => {
+    setScreen(screenName);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to ExoStars</h1>
-        <p>
-          Explore the stars from the perspective of distant exoplanets!
-        </p>
-      </header>
+      {screen === 'home' && <HomeScreen navigateTo={navigateTo} />}
+      {screen === 'select' && <SelectExoplanet />}
+      {screen === 'chart' && <StarChartViewer />}
+      {screen === 'settings' && <Settings />}
     </div>
   );
 }
 
 export default App;
+

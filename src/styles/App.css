@@ -1,0 +1,37 @@
+/* App.css */
+
+:root {
+  --primary-color: #081448;
+  --secondary-color: #282157;
+  --accent-color: #1a2c80;
+  --light-accent: #4a478a;
+  --highlight-color: #da8a8b;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+header {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+button {
+  background-color: var(--highlight-color);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
+
